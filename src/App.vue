@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <header class="app-header">
     <h1>Form de cadastro de endereço</h1>
@@ -26,7 +24,8 @@
         </div>
         <div class="form-group">
           <label for="city">Cidade:</label>
-          <input type="text" id="city" v-mogi
+          <input type="text" id="city" v-model="city" />
+          </div>
         <div class="form-group">
           <label for="state">Estado:</label>
           <input type="text" id="state" v-model="state" />
@@ -67,7 +66,9 @@ const searchCep = async () => {
   } catch (error) {
     cepNotFound.value = true;
     console.error(error);
-  } fi
+  } finally {
+    loading.value = false;
+  }
   
 };
 
