@@ -26,8 +26,7 @@
         </div>
         <div class="form-group">
           <label for="city">Cidade:</label>
-          <input type="text" id="city" v-model="city" />
-        </div>
+          <input type="text" id="city" v-mogi
         <div class="form-group">
           <label for="state">Estado:</label>
           <input type="text" id="state" v-model="state" />
